@@ -24,9 +24,10 @@
       font-family: Outfit;
       src: url(fonts/Outfit-VariableFont_wght.ttf);
     }
-    
+
     .container{
-      margin: 0 auto;
+      display: grid;
+      justify-items: center;
     }
 
     .card{
@@ -36,11 +37,13 @@
       color: hsl(218, 44%, 22%);
       max-width: 15rem;
       align-items: center;
+      overflow: hidden;
     }
 
     .card img{
       padding: 0.75rem;
       border-radius: 1.25rem;
+      width: fit-content;
     }
 
     .card h1{
@@ -65,6 +68,8 @@
     }
   </style>
 
+  <script src="https://cdn.tailwindcss.com"></script>
+
 </head>
 <body>
   <div class="container">
@@ -77,7 +82,7 @@
         Scan the QR code to visit Frontend Mentor and take your coding skills to the next level
       </p>
     </div>
-  
+
     <div class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
       Coded by <a href="#">Manuel Alonso Vargas Hernandez</a>.
